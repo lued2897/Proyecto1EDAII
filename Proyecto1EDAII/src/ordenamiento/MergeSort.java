@@ -7,48 +7,51 @@ package ordenamiento;
 public class MergeSort {
     
     private static int aux[]; //arreglo auxiliar para la funcion merge
+    private static int count;
     
-    public static int merge(int arr[], int low,int mid, int high){
+    public static void merge(int arr[], int low,int mid, int high){
         int i =low,j = mid+1;
         
-        for(int k = low; k<=high; k++){ //TODO replace wih clone
+        for(int k = low; k<=high; k++){ 
             aux[k] = arr[k];
+            count++;
         }
         
         for(int k = low ; k <= high; k++){
             if(i>mid){
                 arr[k] = aux[j++]; 
+                count+=2;
                 
             }else if(j>high){
                 arr[k] = aux[i++];
+                count+=3;
                 
             }else if(aux[j] < aux[i]){
                 arr[k] = aux[j++];
+                count+=4;
                 
             }else{
                 arr[k] = aux[i++];
-                
+                count+=4;
             }
         }
-        
-        return 0;
     }
     
-    private static int sort(int arr[], int low, int high){
+    private static void sort(int arr[], int low, int high){
         if(high <= low){
-            return 0;
+            return;
         }
         int mid = low +(high - low)/2;
         sort(arr, low, mid);
         sort(arr, mid+1, high);
         merge(arr, low, mid, high);
-        return 0;
     }
     
     public static int mergeSort(int arr[]){
         aux = new int[arr.length];
+        count=0;
         sort(arr, 0, arr.length - 1);
-        return 0;
+        return count;
     }
         
 }
