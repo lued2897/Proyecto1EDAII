@@ -40,3 +40,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+*.xml
+Proyecto1EDAII/manifest.mf
+Proyecto1EDAII/nbproject/genfiles.properties
+Proyecto1EDAII/nbproject/project.properties
