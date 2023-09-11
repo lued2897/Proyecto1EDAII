@@ -8,12 +8,13 @@ public class Principal {
     
     public static void main(String[] args) {
         
-        int count,array[] = Utilerias.randArray(262144,1,1000);
+        int count,array[] = Utilerias.randArray(40,1,1000);
         System.out.println("Arreglo original: ");
         Utilerias.printArray(array);
         
-        System.out.println("\nEjecutando MergeSort");
-        count=MergeSort.mergeSort(array);
+        System.out.println("\nEjecutando HeapSort");
+        //count=MergeSort.mergeSort(array);
+        count = HeapSort.heapSort(array);
         System.out.println("Operaciones ejecutadas: "+count+"\n");
         
         System.out.println("Arreglo ordenado: ");
