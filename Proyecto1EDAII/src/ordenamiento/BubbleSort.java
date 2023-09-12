@@ -1,9 +1,9 @@
 
 package ordenamiento; 
 public class BubbleSort {
-    private static int count;
+
     public static int bubbleSort(int a[], int n) {  
-    int i, j;
+    int i, j, count = 0;
 
     for (i = n - 1; i > 0; i--) {
         boolean verificar = false; 
