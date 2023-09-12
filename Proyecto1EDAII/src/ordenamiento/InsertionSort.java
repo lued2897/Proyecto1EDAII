@@ -1,9 +1,9 @@
 
 package ordenamiento; 
 public class InsertionSort {
-    private static int count;
+
     public static int insertionSort(int array[]) { 
-        count = 0; 
+        int count = 0; 
         int n = array.length;  
         for (int j = 1; j < n; j++) {
             int key = array[j]; 
