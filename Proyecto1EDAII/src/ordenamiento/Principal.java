@@ -12,16 +12,17 @@ public class Principal {
         for(int i=1; i<=7; i++){
             
             for(int k=0; k<5; k++){
+                arrays = Utilerias.initArrays(sizes);
             for(int j=0; j<sizes.length; j++){
                 switch(i){
                     case 1:
                         if(j==0 & k==0) System.out.println("Bubble");
-                        count = BubbleSort.bubbleSort(arrays[j].clone(), arrays[j].length);
+                        count = BubbleSort.bubbleSort(arrays[j], arrays[j].length);
                         break;
                         
                     case 2:
                         if(j==0 & k==0) System.out.println("Insertion");
-                        count = InsertionSort.insertionSort(arrays[j].clone());
+                        count = InsertionSort.insertionSort(arrays[j]);
                         break;
                     
                     case 3:
