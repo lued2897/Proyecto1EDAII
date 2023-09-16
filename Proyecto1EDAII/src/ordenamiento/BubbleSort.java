@@ -10,7 +10,7 @@ public class BubbleSort {
         for (j = 0; j < i; j++) {
             count++; //se compara  a[j] y a[j + 1]
             if ( a[j] > a[j + 1]) { 
-                swap(a, j, j + 1); 
+                Utilerias.swap(a, j, j + 1); 
                 verificar = true;
                 count++; //Intercambiamos a[j] y a[j + 1]
             }
