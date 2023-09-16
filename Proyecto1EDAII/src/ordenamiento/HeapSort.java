@@ -7,6 +7,7 @@ public class HeapSort {
     private static void heapify(int arr[],int i){
         int l = (2*i) + 1;
         int r = (2*i) + 2;
+        count+=2;
         int largest;
         
         if(l <= heapSize && arr[l] > arr[i]){

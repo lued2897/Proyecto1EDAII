@@ -2,6 +2,9 @@
 package ordenamiento;
 
 import java.util.Random;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Utilerias {
     static void printArray(int arr[]){
@@ -33,5 +36,24 @@ public class Utilerias {
             //Utilerias.printArray(arrays[i]);
         }
         return arrays;
+    }
+    
+    public static void writeToFile(File f,String data) {
+        FileWriter fr = null;
+        try {
+            fr = new FileWriter(f,true);
+            for (int i = 0; i < data.length(); i++)
+                fr.write(data.charAt(i));
+            //fr.write(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally{
+            //close resources
+            try {
+                fr.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

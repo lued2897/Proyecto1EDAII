@@ -1,13 +1,18 @@
 package ordenamiento;
 
+import java.io.File;
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime;    
 
 public class Principal {
     
     public static void main(String[] args) {
         int sizes[] = {50,100,500,800,1000,2000,5000,10000};
         int count=0;
-        int[][] arrays = Utilerias.initArrays(sizes);
+        int[][] arrays;
         String operations = "";
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd--HH;mm;ss");
+        File f = new File("datos-"+dtf.format(LocalDateTime.now())+".csv");
         
         for(int i=1; i<=7; i++){
             
@@ -50,10 +55,12 @@ public class Principal {
                         break;
                 }
                 //Utilerias.printArray(arrays[j]);
-                operations += Integer.toString(count)+", ";
+                operations += Integer.toString(count);
+                if(j != sizes.length-1) operations +=", ";
                 count = 0;
             }
             System.out.println(operations);
+            Utilerias.writeToFile(f, operations + "\n");
             operations = "";
             }
         }

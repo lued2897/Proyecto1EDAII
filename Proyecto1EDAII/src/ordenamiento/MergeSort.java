@@ -11,10 +11,11 @@ public class MergeSort {
     
     public static void merge(int arr[], int low,int mid, int high){
         int i =low,j = mid+1;
+        count+=2;
         
         for(int k = low; k<=high; k++){ 
             aux[k] = arr[k];
-            count++;
+            count+=2;
         }
         
         for(int k = low ; k <= high; k++){
@@ -24,21 +25,23 @@ public class MergeSort {
                 
             }else if(j>high){
                 arr[k] = aux[i++];
-                count+=3;
+                count+=3;//3
                 
             }else if(aux[j] < aux[i]){
                 arr[k] = aux[j++];
-                count+=4;
+                count+=4; //4
                 
             }else{
                 arr[k] = aux[i++];
-                count+=4;
+                count+=4; //4
             }
+            count++;
         }
     }
     
     private static void sort(int arr[], int low, int high){
         if(high <= low){
+            count++;
             return;
         }
         int mid = low +(high - low)/2;

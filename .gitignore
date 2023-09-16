@@ -44,3 +44,4 @@ nbdist/
 Proyecto1EDAII/manifest.mf
 Proyecto1EDAII/nbproject/genfiles.properties
 Proyecto1EDAII/nbproject/project.properties
+*.csv
