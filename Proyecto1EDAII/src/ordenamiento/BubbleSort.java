@@ -13,8 +13,9 @@ public class BubbleSort {
             if ( a[j] > a[j + 1]) { 
                 Utilerias.swap(a, j, j + 1); 
                 verificar = true;
-                count+=2; //Intercambiamos a[j] y a[j + 1]
+                count ++; //Intercambiamos a[j] y a[j + 1]
             }
+            count ++;
         }
        if (!verificar) 
            return count;

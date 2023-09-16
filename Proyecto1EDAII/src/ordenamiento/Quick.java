@@ -7,20 +7,24 @@ public class Quick {
             int piv = partition(array, low, high);
             count += quickSort(array, low, (piv-1));
             count +=quickSort(array, (piv+1), high);
-            count +=2;
+            count ++;
         }
+        count ++;
         return count;
     }
 
     public static int partition (int array[], int low, int high) {
         int pivot = array[high];
         int i=(low-1);
+        count+=2;
         for(int j=low; j<=(high-1); j++) {
+            count ++;
             if (array[j] <= pivot) {
                 i++;
                 Utilerias.swap(array, i, j);
-                count+=2;
+                count ++;
             }
+            count++;
         }
         Utilerias.swap(array, (i+1), high);
         count++;

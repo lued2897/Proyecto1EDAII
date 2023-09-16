@@ -37,12 +37,12 @@ public class Principal {
                     
                     case 4:
                         if(j==0 & k==0) System.out.println("Quick");
-                        count = Quick.quickSort(arrays[j], 0, arrays[j].length-1);
+                        count =Quick.quickSort(arrays[j], 0, arrays[j].length-1);
                         break;
                         
                     case 5:
                         if(j==0 & k==0) System.out.println("Heap");
-                        count  = HeapSort.heapSort(arrays[j]);
+                        count = HeapSort.heapSort(arrays[j]);
                         break;
                         
                     case 6:
@@ -60,9 +60,10 @@ public class Principal {
                 count = 0;
             }
             System.out.println(operations);
-            Utilerias.writeToFile(f, operations + "\n");
+            //Utilerias.writeToFile(f, operations + "\n");
             operations = "";
             }
+            //Utilerias.writeToFile(f,"\n\n");
         }
         
         /*

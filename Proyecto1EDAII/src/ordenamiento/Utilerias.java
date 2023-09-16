@@ -31,7 +31,7 @@ public class Utilerias {
         //int arrays[][];
         int[][] arrays = new int [sizes.length][]; 
         for(int i = 0; i<sizes.length;i++){
-            arrays[i] = randArray(sizes[i], 1, 1000);
+            arrays[i] = randArray(sizes[i], 1, 100000);
             //System.out.println(arrays[i].length);
             //Utilerias.printArray(arrays[i]);
         }

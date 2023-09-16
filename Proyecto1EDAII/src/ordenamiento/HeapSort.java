@@ -12,21 +12,24 @@ public class HeapSort {
         
         if(l <= heapSize && arr[l] > arr[i]){
             largest = l;
-            count+=3;
+            count++;
         }else{
             largest = i;
-            count+=3;
+            count++;
         }
+        count +=2;
         if(r <= heapSize && arr[r] > arr[largest]){
             largest =  r;
-            count +=3;
+            count +=1;
         }
+        count +=2;
         if(largest != i){
             Utilerias.swap(arr, i, largest);
-            count+=2;
+            count+=1;
             //print
             heapify(arr,largest);
         }
+        count ++;
     }
     
     private static void buildHeap(int arr[]){
