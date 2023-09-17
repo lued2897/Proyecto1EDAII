@@ -8,10 +8,8 @@ public class InsertionSort {
         for (int j = 1; j < n; j++) {
             int key = array[j]; 
             int i = j-1;  
-            count+=2;
-            //para mover los elementos a la derecha 
+            count+=2; // Contador para el bucle externo (for) y comp comp array [i] > key
             while ( (i > -1) && ( array [i] > key ) ) { 
-                count++; //comp
                 array [i+1] = array [i];  
                 count++; //inter, se mueve array[i] a la derecha
                 i--;  
