@@ -1,4 +1,4 @@
-package ordenamientos; 
+package ordenamiento; 
 
 public class ShellSort {
 
@@ -10,16 +10,18 @@ public class ShellSort {
             for (int i = h; i < n; i++) {
                 int key = array[i];
                 int j = i;
-                count++;
+                count+=3;
 
                 while (j >= h && array[j - h] > key) {
                     array[j] = array[j - h];
                     j -= h;
-                    count += 2; // Contar comparación e intercambio
+                    count += 3; // Contar comparación e intercambio
                 }
+                count+=2;
+                /*
                 if (j >= h) {
                     count++; // Contar comparación
-                }
+                }*/
 
                 array[j] = key;
                 count++; // Contar inserción
