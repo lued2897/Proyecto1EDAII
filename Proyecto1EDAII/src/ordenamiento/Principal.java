@@ -1,11 +1,32 @@
 package ordenamiento;
 
+
 import java.io.File;
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;    
 
+/**Clase principal del proyecto 1 de la materia de Estructuras de datos y algoritmos II
+ * 
+ * @author Perez Osorio Luis Eduardo
+ * 
+ */
+
 public class Principal {
     
+    /**Metodo main 
+    <p>No recibe argumentos de linea de comandos
+     Ejecuta los algoritmos de ordenamiento incluidos en el paquete y cuenta 
+     las operaciones realizadas.
+     Cada algoritmo realiza una corrida por cada tamaño incluido en el arreglo sizes.
+     Una corrida consiste en 5 ejecuciones del algorimto.
+     
+     Imprime el numero de operaciones de cada ejecucion el algoritmo, los resultados
+     se guardan en un archivo .csv en la misma carpeta que contiene el proyecto</p>
+     @author Perez Osorio Luis Eduardo
+     @author 
+     @author 
+    * 
+    */
     public static void main(String[] args) {
         int sizes[] = {50,100,500,800,1000,2000,5000,10000};
         int count=0;
@@ -13,7 +34,7 @@ public class Principal {
         String operations = "";
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd--HH;mm;ss");
         File f = new File("datos-"+dtf.format(LocalDateTime.now())+".csv");
-        
+        System.out.println("Resultados guardados en: ./"+ f.getName());
         for(int i=1; i<=7; i++){
             
             for(int k=0; k<5; k++){
@@ -60,10 +81,10 @@ public class Principal {
                 count = 0;
             }//for j
             System.out.println(operations);
-            //Utilerias.writeToFile(f, operations + "\n");
+            Utilerias.writeToFile(f, operations + "\n");
             operations = "";
             }//for k
-            //Utilerias.writeToFile(f,"\n\n");
+            Utilerias.writeToFile(f,"\n\n");
         }
         
         /*

@@ -9,7 +9,7 @@ public class MergeSort {
     private static int aux[]; //arreglo auxiliar para la funcion merge
     private static int count;
     
-    public static void merge(int arr[], int low,int mid, int high){
+    private static void merge(int arr[], int low,int mid, int high){
         int i =low,j = mid+1;
         count+=2;
         
