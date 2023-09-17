@@ -41,17 +41,18 @@ public class Utilerias {
     public static void writeToFile(File f,String data) {
         FileWriter fr = null;
         try {
-            fr = new FileWriter(f,true);
-            for (int i = 0; i < data.length(); i++)
+            fr = new FileWriter(f,true); //abre el archivo sin sobreescribir datos
+            for (int i = 0; i < data.length(); i++){
                 fr.write(data.charAt(i));
-            //fr.write(data);
+            }
         } catch (IOException e) {
+            System.out.println("Error al abrir el archivo " + f.getName());
             e.printStackTrace();
         }finally{
-            //close resources
             try {
                 fr.close();
             } catch (IOException e) {
+                System.out.println("Error al cerrar el archivo "+ f.getName());
                 e.printStackTrace();
             }
         }

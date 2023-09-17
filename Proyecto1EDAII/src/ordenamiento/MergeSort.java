@@ -43,7 +43,7 @@ public class MergeSort {
         if(high <= low){
             count++;
             return;
-        }
+        }else count++;
         int mid = low +(high - low)/2;
         sort(arr, low, mid);
         sort(arr, mid+1, high);

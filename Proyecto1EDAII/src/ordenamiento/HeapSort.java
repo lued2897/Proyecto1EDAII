@@ -25,7 +25,7 @@ public class HeapSort {
         count +=2;
         if(largest != i){
             Utilerias.swap(arr, i, largest);
-            count+=1;
+            count++;
             //print
             heapify(arr,largest);
         }

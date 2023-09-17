@@ -58,11 +58,11 @@ public class Principal {
                 operations += Integer.toString(count);
                 if(j != sizes.length-1) operations +=", ";
                 count = 0;
-            }
+            }//for j
             System.out.println(operations);
             //Utilerias.writeToFile(f, operations + "\n");
             operations = "";
-            }
+            }//for k
             //Utilerias.writeToFile(f,"\n\n");
         }
         
