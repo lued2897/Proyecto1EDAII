@@ -1,3 +1,8 @@
+/**
+ *Autor: Mojica Pereda Elena Samantha
+ *Fecha:17 de septiembre
+ *Clase para ordenar el arreglo a través de SelectionSort
+ */
 package ordenamiento;
 public class Selection {
     public static int selectionSort(int array[], int size){
