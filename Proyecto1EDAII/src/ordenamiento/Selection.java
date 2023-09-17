@@ -1,10 +1,19 @@
 /**
  *Autor: Mojica Pereda Elena Samantha
- *Fecha:17 de septiembre
- *Clase para ordenar el arreglo a través de SelectionSort
+ Última modificación:15 de septiembre
+ *Esta clase contiene el algoritmo de ordenamiento Selection Sort.
+ * El Selection Sort funciona encontrando repetidamente el elemento mínimo 
+ * desde la parte no ordenada y colocándolo al principio.
  */
 package ordenamiento;
 public class Selection {
+    /**
+     * Ordena un arreglo utilizando el algoritmo de Selection Sort.
+     * 
+     * @param array El arreglo que se desea ordenar.
+     * @param size  El tamaño del arreglo.
+     * @return La cantidad total de operaciones realizadas durante el proceso de ordenamiento.
+     */
     public static int selectionSort(int array[], int size){
         int indiceMenor;
         int count = 0;
