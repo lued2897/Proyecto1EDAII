@@ -1,3 +1,8 @@
+/**
+ *Autor: Mojica Pereda Elena Samantha
+ *Fecha:17 de septiembre
+ *Clase para ordenar el arreglo a través de QuickSort
+ */
 package ordenamiento;
 public class Quick {
     public static int count;
