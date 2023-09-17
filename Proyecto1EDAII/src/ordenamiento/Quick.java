@@ -9,7 +9,6 @@ public class Quick {
             count +=quickSort(array, (piv+1), high);
             count ++;
         }
-        count ++;
         return count;
     }
 
