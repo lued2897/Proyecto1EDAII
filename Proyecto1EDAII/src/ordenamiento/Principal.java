@@ -7,8 +7,9 @@ import java.time.LocalDateTime;
 
 /**Clase principal del proyecto 1 de la materia de Estructuras de datos y algoritmos II
  * 
- * @author Perez Osorio Luis Eduardo
+ <p>Autor: Perez Osorio Luis Eduardo</p>
  * 
+ <p>Ultima modificacion 17/09/2023</p>
  */
 
 public class Principal {
@@ -22,7 +23,7 @@ public class Principal {
      
      Imprime el numero de operaciones de cada ejecucion el algoritmo, los resultados
      se guardan en un archivo .csv en la misma carpeta que contiene el proyecto</p>
-     @author Perez Osorio Luis Eduardo
+     Autor: Perez Osorio Luis Eduardo
      @author 
      @author 
     * 

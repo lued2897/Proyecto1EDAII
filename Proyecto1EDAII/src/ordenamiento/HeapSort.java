@@ -1,9 +1,9 @@
 package ordenamiento;
 /**Algoritmo de ordenamiento HeapSort.
-* Ordena un arreglo y cuenta el numero de operacones realizadas.
-* @author Perez Osorio Luis Eduardo
+ Ordena un arreglo y cuenta el numero de operacones realizadas.
+ <p>Autor: Perez Osorio Luis Eduardo</p>
 * 
-* 
+<p>Ultima modificacion 16/09/2023</p>
 */
 public class HeapSort {
     

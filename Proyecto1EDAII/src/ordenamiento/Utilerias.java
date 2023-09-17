@@ -8,9 +8,9 @@ import java.io.IOException;
 
 /**Contiene metodos estaticos auxiliares al funcionamiento del programa. 
  * 
- * @author Perez Osorio Luis Eduardo
+ <p>Autor: Perez Osorio Luis Eduardo</p>
  * 
- * 
+ <p>Ultima modificacion 16/09/2023</p>
  */
 public class Utilerias {
     

@@ -1,8 +1,9 @@
 package ordenamiento;
 
-/**
- *
- * @author lalo
+/** Ordena un arreglo utilizando Merge Sort y cuenta las operaciones realizadas
+ <p>Autor: Perez Osorio Luis Eduardo</p>
+ * 
+ <p>Ultima modificacion 16/09/2023</p>
  */
 public class MergeSort {
     
