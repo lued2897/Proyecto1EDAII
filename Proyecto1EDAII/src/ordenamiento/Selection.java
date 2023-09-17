@@ -1,9 +1,9 @@
-/**
- *Autor: Mojica Pereda Elena Samantha
- Última modificación:15 de septiembre
- *Esta clase contiene el algoritmo de ordenamiento Selection Sort.
- * El Selection Sort funciona encontrando repetidamente el elemento mínimo 
- * desde la parte no ordenada y colocándolo al principio.
+/**Esta clase contiene el algoritmo de ordenamiento Selection Sort.
+ El Selection Sort funciona encontrando repetidamente el elemento mínimo 
+ desde la parte no ordenada y colocándolo al principio.
+ <p>Autor: Mojica Pereda Elena Samantha
+ *
+ <p>Ultima modificacion 15/09/2023</p>
  */
 package ordenamiento;
 public class Selection {
