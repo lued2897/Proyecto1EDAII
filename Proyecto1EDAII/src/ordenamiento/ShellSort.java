@@ -2,30 +2,27 @@ package ordenamiento;
 
 public class ShellSort {
 
-    public static int countShellSort(int[] array) {
+    public static int shellSort(int[] array) {
         int n = array.length;
-        int count = 0;
+        int h = n / 2; 
+        int count=0; 
 
-        for (int h = n / 2; h > 0; h /= 2) {
+        while (h > 0) {
             for (int i = h; i < n; i++) {
                 int key = array[i];
                 int j = i;
-                count+=3;
-
+                count++;
+                
                 while (j >= h && array[j - h] > key) {
                     array[j] = array[j - h];
                     j -= h;
-                    count += 3; // Contar comparación e intercambio
+                    count += 2; // Contar comparación e intercambio
                 }
-                count+=2;
-                /*
-                if (j >= h) {
-                    count++; // Contar comparación
-                }*/
 
                 array[j] = key;
                 count++; // Contar inserción
             }
+            h = h / 2; // Reducir h a la mitad en cada iteración
         }
         return count;
     }
