@@ -1,3 +1,4 @@
+package ordenamiento;
 /**Esta clase contiene el algoritmo de ordenamiento Selection Sort.
  El Selection Sort funciona encontrando repetidamente el elemento mínimo 
  desde la parte no ordenada y colocándolo al principio.
@@ -5,7 +6,6 @@
  *
  <p>Ultima modificacion 15/09/2023</p>
  */
-package ordenamiento;
 public class Selection {
     /**
      * Ordena un arreglo utilizando el algoritmo de Selection Sort.
