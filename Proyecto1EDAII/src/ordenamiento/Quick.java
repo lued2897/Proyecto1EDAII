@@ -1,3 +1,4 @@
+package ordenamiento;
 /**La clase Quick proporciona una implementación del algoritmo de ordenamiento QuickSort.
  Este algoritmo divide una lista en sublistas más pequeñas, ordena cada lista y luego
  las combina para obtener una lista ordenada.
@@ -5,7 +6,6 @@
  *
  <p>Ultima modificacion 17/09/2023</p>
  */
-package ordenamiento;
 public class Quick {
      
     /**
