@@ -74,7 +74,7 @@ public class Principal {
                         
                     case 7:
                         if(j==0 & k==0) System.out.println("Shell");
-                        count = ShellSort.countShellSort(arrays[j]);
+                        count = ShellSort.shellSort(arrays[j]);
                         break;
                 }
                 //Utilerias.printArray(arrays[j]);
