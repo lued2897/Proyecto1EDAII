@@ -1,7 +1,7 @@
 /**La clase BubbleSort proporciona una implementación del algoritmo de ordenamiento BubbleSort.
-  Este algoritmo divide una lista en sublistas más pequeñas, ordena cada lista y luego
-  las combina para obtener una lista ordenada.
-  
+ Este algoritmo recorre repetidamente una lista, compara elementos adyacentes y los intercambia si están en 
+ el orden incorrecto. Este proceso se repite hasta que la lista esté completamente ordenada.
+ 
  <p>Autor: Hernández Sánchez Karla
  *
  <p>Ultima modificacion 17/09/2023</p>
