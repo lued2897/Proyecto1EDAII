@@ -1,3 +1,5 @@
+
+package ordenamiento; 
 /**La clase InsertionSort proporciona una implementación del algoritmo de ordenamiento InsertionSort.
 Este algoritmo a medida que avanza, va dividiedno el arreglo en unaparte ordenada y una desordenada 
 toma elementos de la parte desordenada y los inserta en la posición correcta.
@@ -5,9 +7,12 @@ toma elementos de la parte desordenada y los inserta en la posición correcta.
  *
  <p>Ultima modificacion 17/09/2023</p>
  */
-package ordenamiento; 
 public class InsertionSort {
-
+    /**
+     * 
+     * @param array Lista de entrada
+     * @return numero de operaciones realizadas
+     */
     public static int insertionSort(int array[]) { 
         int count = 0; 
         int n = array.length;  

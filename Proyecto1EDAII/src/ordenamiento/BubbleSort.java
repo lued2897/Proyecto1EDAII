@@ -1,3 +1,5 @@
+
+package ordenamiento; 
 /**La clase BubbleSort proporciona una implementación del algoritmo de ordenamiento BubbleSort.
  Este algoritmo recorre repetidamente una lista, compara elementos adyacentes y los intercambia si están en 
  el orden incorrecto. Este proceso se repite hasta que la lista esté completamente ordenada.
@@ -6,9 +8,14 @@
  *
  <p>Ultima modificacion 17/09/2023</p>
  */
-package ordenamiento; 
 public class BubbleSort {
 
+    /***
+     * 
+     * @param a lista de entrada
+     * @param n tamaño de la lista
+     * @return conteo de las operaciones realizadas
+     */
     public static int bubbleSort(int a[], int n) {  
     int i, j, count = 0;
 

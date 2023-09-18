@@ -8,17 +8,17 @@ package ordenamiento;
  */
 public class Quick {
      
-    /**
-     * Un contador que rastrea la cantidad total de operaciones realizadas durante el proceso de ordenamiento.
+    /**Un contador que rastrea la cantidad total de operaciones realizadas durante el proceso de ordenamiento.
+     * 
      */
     public static int count;
 
-    /**
-     * Ordena una matriz utilizando el algoritmo QuickSort.
+    /**Ordena un arreglo utilizando el algoritmo QuickSort.
+     * 
      *
-     * @param array La matriz que se va a ordenar.
+     * @param array El arreglo que se va a ordenar.
      * @param low   El índice más bajo de la lista (generalmente 0).
-     * @param high  El índice más alto de la lista (generalmente la longitud de la matriz - 1).
+     * @param high  El índice más alto de la lista (generalmente la longitud del arreglo - 1).
      * @return El número total de operaciones realizadas durante el proceso de ordenamiento.
      */
     public static int quickSort(int array[], int low, int high){
@@ -33,7 +33,7 @@ public class Quick {
     }
     
     /**
-     * Particiona una lista en dos sublistas y coloca elementos menores o iguales al pivote
+     Particiona una lista en dos sublistas y coloca elementos menores o iguales al pivote
      * en la sublista izquierda y elementos mayores en la sublista derecha.
      *
      * @param array La lista que se va a particionar.

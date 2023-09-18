@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
  * 
  <p>Ultima modificacion 17/09/2023</p>
  */
-
 public class Principal {
     
     /**Metodo main 
